@@ -1,12 +1,87 @@
-# React + Vite
+# 🏃 Athletic-hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Link:** [Visit Athletic-hub](http://assignment-11-imon.surge.sh/)
 
-Currently, two official plugins are available:
+Athletic-hub is a modern web platform that allows users to create, manage, and book athletic events. With user authentication, dynamic booking features, and a responsive interface, it's an all-in-one hub for sports enthusiasts and event organizers.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+* 🔐 User Authentication (Register/Login/Private Routes)
+* 📅 Create, Update, and Manage Athletic Events
+* 📥 Book Events and View Booking History
+* 🏠 Interactive Home Page with Carousel and Highlights
+* 🔍 Event Details and Search Functionality
+* 🎨 Clean UI with Dynamic Components
+* 🔔 Sweet Alert for Notifications
+* 🧠 Context-based Global State Management
+* 🌀 Reusable Components (Navbar, Footer, Loading)
+* ⚠️ 404 Not Found Page for Invalid Routes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+
+* React.js
+* React Router DOM
+* Tailwind CSS
+* Axios
+* SweetAlert2
+
+---
+
+## 📁 Project Structure (Highlights)
+
+```
+src/
+├── components/
+│   ├── common/                 # Navbar, Footer, SweetAlert, etc.
+│   ├── events/                 # EventCard, EventDetails
+│   ├── forms/                  # Create, Update, Login, Register Forms
+│   └── homeComponent/          # Carousel, Collapsibles, HomeCards
+├── pages/                      # Route pages (Home, Login, Events, etc.)
+├── provider/                   # AuthContext, Provider, PrivateRoute
+├── hooks/                      # Custom hooks like useAuth
+├── services/                   # API utilities
+├── utils/                      # Helper functions
+├── firebase/                   # Firebase config
+├── layouts/                    # MainLayout wrapper
+├── main.jsx                    # Entry point
+└── index.css                   # Styles
+```
+
+---
+
+## 🚀 Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/athletic-hub.git
+   cd athletic-hub
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Set up Firebase:**
+
+   * Create a Firebase project
+   * Enable Email/Password Authentication
+   * Add your Firebase credentials in `src/firebase/firebase.config.js`
+
+4. **Run the app:**
+
+   ```bash
+   npm run dev
+   ```
+
+5. **Build for production:**
+
+   ```bash
+   npm run build
+   ```
