@@ -48,7 +48,7 @@ const BookingsPage = () => {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row  justify-between items-center">
+      <div className="flex flex-col md:flex-row  justify-between items-center ">
         <h1 className="text-2xl text-center font-semibold md:font-bold mt-5">
           MyBooked Events
         </h1>

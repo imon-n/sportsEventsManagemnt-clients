@@ -29,7 +29,7 @@ const Footer = () => {
   );
 
   return (
-    <footer className="footer h-full bg-blue-700 text-white mt-10 pt-10 flex flex-col justify-center text-center w-full items-center space-y-1">
+    <footer className="footer bg-blue-700 text-white mt-10 -mb-96 pt-6 pb-0 flex flex-col justify-center text-center w-full items-center space-y-1">
       <div className="flex items-center justify-center gap-2">
         <img
           className="w-12 rounded-full"
@@ -68,7 +68,7 @@ const Footer = () => {
           <IoLogoYoutube size={25} />
         </a>
       </div>
-      <div className="text-center text-sm mb-3">
+      <div className="text-center text-sm pb-3">
         © 2025 AthleticHub. All rights reserved.
       </div>
     </footer>
