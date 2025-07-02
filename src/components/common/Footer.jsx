@@ -28,6 +28,9 @@ const Footer = () => {
     </>
   );
 
+  // git pull origin main --rebase
+
+
   return (
     <footer className="footer bg-blue-700 text-white mt-10 -mb-96 pt-6 pb-0 flex flex-col justify-center text-center w-full items-center space-y-1">
       <div className="flex items-center justify-center gap-2">
