@@ -31,6 +31,12 @@ const Navbar = () => {
       <li>
         <Link to="/events">Events</Link>
       </li>
+      <li>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="/events">Events</Link>
+      </li>
 
       {user && (
         <>
@@ -124,12 +130,6 @@ const Navbar = () => {
               className="btn btn-info w-14 md:w-22 text-white  px-3 md:px-8"
             >
               Login
-            </Link>
-            <Link
-              to="/auth/register"
-              className="btn btn-secondary w-14 md:w-22 text-white  px-3 md:px-8"
-            >
-              Register
             </Link>
           </div>
         )}

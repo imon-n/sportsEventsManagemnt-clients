@@ -15,6 +15,8 @@ import RegisterPage from "./pages/RegisterPage";
 import UpdateEventPage from "./pages/UpdateEventPage";
 import AuthProvider from "./provider/AuthProvider";
 import PrivateRoute from "./provider/PrivateRoute";
+import AboutUs from "./components/homeComponent/AboutUs";
+import ContactUs from "./components/homeComponent/ContactUs";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
       {
         path: "bookings",
         Component: BookingsPage,
+      },
+      {
+        path: "aboutUs",
+        Component:AboutUs
+      },
+      {
+        path: "contactUs",
+        Component:ContactUs
       },
       {
         path: "event/:id",
