@@ -17,6 +17,7 @@ import AuthProvider from "./provider/AuthProvider";
 import PrivateRoute from "./provider/PrivateRoute";
 import AboutUs from "./components/homeComponent/AboutUs";
 import ContactUs from "./components/homeComponent/ContactUs";
+import CategoryCards from "./components/homeComponent/CategoryCards";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "contactUs",
         Component:ContactUs
+      },
+      {
+        path: "CategoryCards",
+        Component:CategoryCards
       },
       {
         path: "event/:id",
